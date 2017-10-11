@@ -1,0 +1,46 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
+.blog-overview {
+    @include page-styling (0, $orange);
+
+    &__header {
+        margin: -45px 0 0 0;
+        background: $purple;
+        transform: skew(0,-5deg);
+        -webkit-transform: skew(0,-5deg);
+        -ms-transform: skew(0,-5deg);
+
+        &-title {
+            font-size: 66px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 30px 0;
+        }
+
+        &-searchbar {
+            background: $white;
+
+        }
+
+    }
+
+    &__list {
+
+        &-item {
+            background: $purple;
+            height: 300px;
+            width: 300px;
+
+            &-year {
+                color: $white;
+            }
+
+            &-title {
+                color: $white;
+            }
+
+        }
+    }
+
+}

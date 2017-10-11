@@ -1,0 +1,23 @@
+@mixin page-styling ($padding, $color) {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: $padding;
+    margin-left: 72px;
+    background: $color;
+    width: 100%;
+    height: 100%;
+    color: $white;
+}
+
+@mixin flex-styling () {
+    justify-content: flex-start;
+    align-self: center;
+    flex-direction: column;
+}
+
+@mixin menu-transition () {
+    -webkit-transition-duration: 180ms;
+    transition-duration: 180ms;
+}

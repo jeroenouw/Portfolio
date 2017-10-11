@@ -1,0 +1,38 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
+.about-me {
+    @include page-styling (50px 0 0 70px, $darkgrey);
+
+    &__title {
+        font-size: 66px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        width: 500px;
+        margin: 10px 0;
+    }
+
+    &__languages {
+
+        &-item {
+
+        }
+    }
+
+    &__image {
+
+    }
+
+    &__scrolldown {    
+        background: $orange;
+
+        &-paragraph {
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "./src/assets/scss/base/variables";
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $white;
+    z-index: 20;
+
+    &__title {
+        background: $white;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 20px 0;
+        color: $darkgrey;
+    }
+}

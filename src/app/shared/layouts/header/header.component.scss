@@ -1,0 +1,25 @@
+@import "./src/assets/scss/base/variables";
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $white;
+    z-index: 20;
+
+    &__title {
+        background: $white;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 21px 0;
+        color: $darkgrey;
+        outline: inherit;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}

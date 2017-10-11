@@ -1,0 +1,38 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
+.welcome {
+    @include page-styling (50px 0 0 70px, $orange);
+
+    &__title {
+        font-size: 150px;
+        font-weight: 900;
+        font-style: italic;
+        margin: 30px 0;
+    }
+
+    &__paragraph {
+        font-size: 34px;
+        font-weight: 500;
+        font-style: italic;
+        width: 500px;
+        margin: 10px 0;
+    }
+
+    &__scrolldown {
+        position: absolute;
+        bottom: -75%;
+        width: 100%;
+        height: 100%;        
+        background: $darkgrey;
+        transform: skew(0,-25deg);
+        -webkit-transform: skew(0,-25deg);
+        -ms-transform: skew(0,-25deg);
+
+        &-paragraph {
+        transform: skew(0,0deg);
+        -webkit-transform: skew(0, 0deg);
+        -ms-transform: skew(0, 0deg);
+        }
+    }
+}

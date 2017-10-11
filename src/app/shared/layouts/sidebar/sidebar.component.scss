@@ -1,0 +1,18 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
+.sidebar {
+    display: flex;
+    width: 72px;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    background: $white;
+
+    &__images {
+        @include flex-styling;
+        text-decoration: none;
+        color: inherit;
+        width: 50px;
+    }
+}
