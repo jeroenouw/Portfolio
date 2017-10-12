@@ -1,18 +1,24 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
 .wrapper {
     display: flex;
     flex-direction: row;
+
     app-menu {
         position: fixed;
         display: flex;
         left: 0px;
         height: 100%;
         width: 72px;
+        z-index: 60;
     }
 
     .container {
         min-height: 100%;
         display: flex;
         flex-direction: column;
+        z-index: 20;
 
         app-header {
             display: flex;
@@ -30,6 +36,7 @@
         right: 0px;
         height: 100%;
         width: 72px;
+        z-index: 60;
     }
 
 }

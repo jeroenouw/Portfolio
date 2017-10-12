@@ -3,6 +3,7 @@
 
 .project {
     @include page-styling (50px 0 0 70px, $darkgrey);
+    flex-direction: row;
 
     .info {
         width: 35%;
@@ -11,6 +12,7 @@
             font-size: 46px;
             font-weight: 700;
             margin: 30px 0;
+            word-wrap: break-word;
         }
 
         &__client {
@@ -43,8 +45,9 @@
         &__paragraph {
             font-size: 16px;
             font-weight: 400;
-            width: 500px;
+            width: 90%;
             margin: 10px 0;
+            word-wrap: break-word;
         }
 
         &__link {
@@ -70,21 +73,30 @@
     }
 
     .images {
+        margin: -49px 0 0 0;
+        max-width: 600px;
+        max-height: 600px;
 
-        &__wide {
-            height: 300px;
-            width: 600px;
-        }
+        &__item {
 
-        &__small {
-            height: 300px;
-            width: 300px;
+            &-wide {
+                height: 300px;
+                width: 600px;
+            }
+    
+            &-small {
+                display: table-cell;
+                height: 300px;
+                width: 300px;
+            }
+
         }
 
     }
 
     .sidemenu {
         background: $darkgrey;
+        width: 40px;
 
         &__btn {
 

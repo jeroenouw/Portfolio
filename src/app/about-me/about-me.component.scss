@@ -1,38 +1,75 @@
 @import "./src/assets/scss/base/variables";
 @import "./src/assets/scss/base/mixins";
 
-.about-me {
+.about {
     @include page-styling (50px 0 0 70px, $darkgrey);
+    flex-direction: row;
+    width: calc(100% - 144px);
+    flex-wrap: wrap;
 
-    &__title {
-        font-size: 66px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 30px 0;
-    }
+    .about-me {
+        width: 60%;
+        z-index: 20;
 
-    &__paragraph {
-        font-size: 16px;
-        font-weight: 400;
-        width: 500px;
-        margin: 10px 0;
-    }
+        &__title {
+            font-size: 66px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 30px 0;
+        }
 
-    &__languages {
+        &__paragraph {
+            font-size: 16px;
+            font-weight: 400;
+            width: 500px;
+            margin: 10px 0;
+        }
 
-        &-item {
-
+        &__languages {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 455px;
+            padding: 20px;
+            
+            &-item {
+                margin: 15px 20px;
+                width: 50px;
+            
         }
     }
+    }
 
-    &__image {
+    .image {        
+        width: 40%;
+        margin: -50px 0 0 0;
+        z-index: 20;
+
+        &__item {
+
+        }
 
     }
 
-    &__scrolldown {    
+    .skew {
+        @include skew (5deg);
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 200px;
         background: $orange;
+        overflow: hidden;
+        margin: 0 0 110px -70px;
+        z-index: 40;
 
-        &-paragraph {
+        &__scrolldown {   
+            @include skew (-5deg); 
+
+            &-paragraph {
+                justify-content: center;
+            }
         }
     }
 }

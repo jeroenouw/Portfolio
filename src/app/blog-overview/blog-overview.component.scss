@@ -2,16 +2,15 @@
 @import "./src/assets/scss/base/mixins";
 
 .blog-overview {
-    @include page-styling (0, $orange);
+    @include page-styling (0, $darkgrey);
 
     &__header {
+        @include skew (-5deg);
         margin: -45px 0 0 0;
         background: $purple;
-        transform: skew(0,-5deg);
-        -webkit-transform: skew(0,-5deg);
-        -ms-transform: skew(0,-5deg);
 
         &-title {
+            @include skew (5deg);
             font-size: 66px;
             font-weight: 700;
             text-transform: uppercase;
@@ -19,27 +18,48 @@
         }
 
         &-searchbar {
+            @include skew (5deg);
             background: $white;
+            color: $purple;
 
         }
 
     }
 
     &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around center;
+        align-items: center;
+        flex-wrap: wrap;
 
         &-item {
             background: $purple;
             height: 300px;
             width: 300px;
 
-            &-year {
+            &-date {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 20px 20px 5px 20px;
+                font-style: italic;
                 color: $white;
             }
 
             &-title {
+                font-size: 26px;
+                font-weight: 900;
+                padding: 0 20px 20px 20px;
                 color: $white;
             }
 
+        }
+
+        &-arrow {
+            @include scroll-button (-45deg);
+            position: absolute;
+            right: 30px;
+            bottom: 190px;
         }
     }
 
