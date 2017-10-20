@@ -1,75 +1,126 @@
 @import "./src/assets/scss/base/variables";
 @import "./src/assets/scss/base/mixins";
-
+.example-container {
+    margin: -49px 0 0 0;
+    width: 300px;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background: $darkgrey;
+    height: 650px;
+    margin: 0 30px 0 0;
+  }
+  
+  .example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $darkgrey;
+    color: $white;
+    padding: 20px;
+    width: 280px;
+  }
 .project {
     @include page-styling (50px 0 0 70px, $darkgrey);
     flex-direction: row;
 
-    .info {
+    .content-left {
+        display: flex;
+        flex-direction: column;
         width: 35%;
-        
-        &__title {
-            font-size: 46px;
-            font-weight: 700;
-            margin: 30px 0;
-            word-wrap: break-word;
-        }
 
-        &__client {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 0px;
+        .info {
+            
+            &__title {
+                font-size: 46px;
+                font-weight: 700;
+                margin: 30px 0;
+                word-wrap: break-word;
+            }
 
-            &-name {
-                font-size: 16px;
-                font-style: italic;
+            &__client {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
                 margin: 0px;
+
+                &-name {
+                    font-size: 16px;
+                    font-style: italic;
+                    margin: 0px;
+                }
+
             }
 
-        }
+            &__date {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 10px 0 0 0;
 
-        &__date {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 10px 0 0 0;
+                &-time {
+                    font-style: italic;
+                    margin: 0 0 10px 0;
+                }
 
-            &-time {
-                font-style: italic;
-                margin: 0 0 10px 0;
             }
 
-        }
+            &__paragraph {
+                font-size: 16px;
+                font-weight: 400;
+                width: 90%;
+                margin: 10px 0;
+                word-wrap: break-word;
+            }
 
-        &__paragraph {
-            font-size: 16px;
-            font-weight: 400;
-            width: 90%;
-            margin: 10px 0;
-            word-wrap: break-word;
-        }
-
-        &__link {
-            font-size: 16px;
-            font-weight: 700;
-            text-transform: uppercase;
-
-        }
-
-        &__skill {
-            background: $lightgreen;
-
-            &-title {
+            &__link {
+                font-size: 16px;
+                font-weight: 900;
                 text-transform: uppercase;
 
             }
 
-            &-items {
-                font-style: italic;
-            }
         }
 
+        .skill {
+            @include skew (-8deg);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 120px;
+            height: 250px;
+            width: 38%;
+            background: $lightgreen;
+
+            &__container {
+                margin: -60px 0 0 30px;
+
+                &-title {
+                    @include skew (8deg);
+                    text-transform: uppercase;
+                    margin: 0;
+
+                }
+
+                &-items {
+                    @include skew (8deg);
+                    font-style: italic;
+                    margin: 0;
+                    width: 100%;
+                    word-wrap: break-word;
+                }
+            
+            }
+
+        }
+        
     }
 
     .images {
@@ -96,15 +147,26 @@
 
     .sidemenu {
         background: $darkgrey;
-        width: 40px;
+        height: 100%;
 
         &__btn {
+            display: inline-flex;
+            width: 240px;
 
             &-number {
+                color: $white;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $lightgreen;
+                }
 
             }
 
             &-title {
+                color: $white;
+                text-decoration: none;
 
             }
         }

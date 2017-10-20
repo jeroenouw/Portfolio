@@ -1,0 +1,72 @@
+@import "./src/assets/scss/base/variables";
+@import "./src/assets/scss/base/mixins";
+
+.blog {
+    @include page-styling (0, $white);
+    position: relative;
+
+    &__header {
+        @include skew (-5deg);
+        margin: -80px 0 0 0;
+        background: $purple;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 350px;
+
+        &-container {
+            margin: 50px 0 0 30px;
+        }
+
+        &-date {
+            @include skew (5deg);
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        &-title {
+            @include skew (5deg);
+            font-size: 46px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-paragraph {
+            color: $darkgrey;
+            width: 70%;
+
+            &--first {
+                margin-top: 40px;
+            }
+
+        }
+
+        &-header {
+            font-size: 24px;
+            font-weight: 700;
+            background-color: $purple;
+            color: $white;
+            text-align: center;
+            padding: 8px 12px;
+        }
+        
+        &-image {
+            max-width: 70%;
+            margin: 25px 0;
+        }
+
+    }
+
+}

@@ -10,6 +10,8 @@
     .about-me {
         width: 60%;
         z-index: 20;
+        overflow-y: scroll;
+        height: 100%;
 
         &__title {
             font-size: 66px;
@@ -55,6 +57,9 @@
 
     .skew {
         @include skew (5deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         bottom: 0px;
         width: 100%;
