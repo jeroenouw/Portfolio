@@ -10,20 +10,12 @@
     to   { opacity: 1; }
 }
 
-.mat-drawer {
-    background-color: lightgrey!important;
-    width: 300px;
-    height: 800px;
-}
-
-.menu {    
-    @include flex-styling;
-    z-index: 50;
+.menu {
+    z-index: 150;
     left: 0;
     width: 72px;
     height: 50px;
     text-align: center;
-    margin-left: -16px;
     font-size: 16px;
     background: $white;
 

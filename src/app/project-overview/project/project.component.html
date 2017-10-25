@@ -1,15 +1,15 @@
-<section class="project">
-  <section class="content-left">
-    <section class="info">
+<div class="project">
+  <div class="content-left">
+    <div class="info">
       <h1 class="info__title">
         Project title bla bla        
       </h1>
       <h5 class="info__client">Client</h5>
       <p class="info__client-name">Name of Client</p>
-
+      
       <h5 class="info__date">Date</h5>
       <p class="info__date-time">mm / dd / yyyy</p>
-
+      
       <p class="info__paragraph">
         It won’t be a bigger problem to ﬁnd one video game lover in your neighbor. 
         Since the introduction of Virtual Game, 
@@ -17,79 +17,79 @@
         The history of video game is as interesting as a fairy tale.
         The quality of today’s video game was not at all there when video game ﬁrst conceptualized and played ever. 
       </p>
-
+      
       <div class="info__link">
         <i class="fa fa-link" aria-hidden="true">View online</i>
       </div>
-
-    </section>
-
-    <section class="skill">
+      
+    </div>
+    
+    <div class="skill">
       <div class="skill__container">
         <h5 class="skill__container-title">Skills used</h5>
         <p class="skill__container-items">
           Angular 2, Grunt, Typescript, HTML, CSS, Gulp, Webpack, C#
         </p>
       </div>
-    </section>
-  </section>
-
-  <section class="images">
-    <div class="images__item images__item-wide"><img src="http://via.placeholder.com/600x300"></div>
+    </div>
+  </div>
+  
+  <div class="images">
+    <!-- <div class="images__item images__item-wide"><img src="http://via.placeholder.com/600x300"></div>
     <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div>
-    <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div>
-  </section>
-
-  <section class="sidemenu">  
-
-
-
-  <mat-sidenav-container class="example-container">
-      <mat-sidenav align="end" mode="over" #sidenav class="example-sidenav">
-          <a class="sidemenu__btn" routerLink="/">
-            <h3 class="sidemenu__btn-number">01</h3>
-            <h4 class="sidemenu__btn-title">Title of project</h4>
-          </a>
-          <a class="sidemenu__btn" routerLink="/">
-            <h3 class="sidemenu__btn-number">02</h3>
-            <h4 class="sidemenu__btn-title">Title of project</h4>
-          </a>
-          <a class="sidemenu__btn" routerLink="/">
-            <h3 class="sidemenu__btn-number">03</h3>
-            <h4 class="sidemenu__btn-title">Title of project</h4>
-          </a>
-          <a class="sidemenu__btn" routerLink="/">
-            <h3 class="sidemenu__btn-number">04</h3>
-            <h4 class="sidemenu__btn-title">Title of project</h4>
-          </a>
-          <a class="sidemenu__btn" routerLink="/">
-            <h3 class="sidemenu__btn-number">05</h3>
-            <h4 class="sidemenu__btn-title">Title of project</h4>
-          </a>
-      </mat-sidenav>
+    <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div> -->
+    <div class="images__item images__item-wide"></div>
+    <div class="images__item images__item-small"></div>
+    <div class="images__item images__item-small"></div>
+  </div>
+  
+  <div class="sidemenu">  
     
-      <div class="example-sidenav-content">
-        <a type="button" mat-button (click)="sidenav.open()">
+    <mat-sidenav-container class="sidemenu__container">
+
+      <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
+        <a class="sidemenu__btn" routerLink="/">
+          <h3 class="sidemenu__btn-number">01</h3>
+          <h4 class="sidemenu__btn-title">Title of project</h4>
+        </a>
+        <a class="sidemenu__btn" routerLink="/">
+          <h3 class="sidemenu__btn-number">02</h3>
+          <h4 class="sidemenu__btn-title">Title of project</h4>
+        </a>
+        <a class="sidemenu__btn" routerLink="/">
+          <h3 class="sidemenu__btn-number">03</h3>
+          <h4 class="sidemenu__btn-title">Title of project</h4>
+        </a>
+        <a class="sidemenu__btn" routerLink="/">
+          <h3 class="sidemenu__btn-number">04</h3>
+          <h4 class="sidemenu__btn-title">Title of project</h4>
+        </a>
+        <a class="sidemenu__btn" routerLink="/">
+          <h3 class="sidemenu__btn-number">05</h3>
+          <h4 class="sidemenu__btn-title">Title of project</h4>
+        </a>
+      </mat-sidenav>
+      
+      <div class="sidemenu__sidenav-outside">
+        <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">01</h3>
         </a>
-        <a type="button" mat-button (click)="sidenav.open()">
+        <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">02</h3> 
         </a>
-        <a type="button" mat-button (click)="sidenav.open()">
+        <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">03</h3>
         </a>
-        <a type="button" mat-button (click)="sidenav.open()">
+        <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">04</h3>
         </a>
-        <a type="button" mat-button (click)="sidenav.open()">
+        <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">05</h3>
         </a>
       </div>
-    
+      
     </mat-sidenav-container>
-
-
-
-  </section>
+      
+  </div>
   
-</section>
+</div>

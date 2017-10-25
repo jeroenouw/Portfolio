@@ -1,13 +1,9 @@
 @mixin page-styling ($padding, $color) {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: $padding;
-    margin: 72px;
     background: $color;
-    width: calc(100% - 142px);
-    height: 100%;
     color: $white;
 }
 
@@ -34,6 +30,7 @@
 }
 
 @mixin flex-styling () {
+    display: flex;
     justify-content: flex-start;
     align-self: center;
     flex-direction: column;

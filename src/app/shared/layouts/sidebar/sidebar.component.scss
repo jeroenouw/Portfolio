@@ -1,18 +1,37 @@
 @import "./src/assets/scss/base/variables";
 @import "./src/assets/scss/base/mixins";
 
-.sidebar {
-    display: flex;
-    width: 72px;
-    text-align: center;
+.sidebar {   	
     box-sizing: border-box;
-    justify-content: flex-end;
     background: $white;
+    align-content: center;
+    text-align: center;
+    width: 72px;
 
     &__images {
         @include flex-styling;
         text-decoration: none;
-        color: inherit;
-        width: 72px;
+        font-size: 33px;
+
+        & a {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            align-self: center;
+            background-color: $darkgrey;
+            color: $white;
+            margin: 5px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $white;
+                color: $darkgrey;
+            }
+
+            &::before {
+                vertical-align: sub;
+            }
+        }
     }
 }
