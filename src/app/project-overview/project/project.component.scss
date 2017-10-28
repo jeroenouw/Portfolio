@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px;
     background: $darkgrey;
     color: $white;
     position: relative;
@@ -13,6 +12,7 @@
     .content-left {
         display: flex;
         flex-direction: column;
+        // width: 50%;
         
         .info {
             
@@ -34,7 +34,6 @@
                     font-style: italic;
                     margin: 0px;
                 }
-                
             }
             
             &__date {
@@ -47,7 +46,6 @@
                     font-style: italic;
                     margin: 0 0 10px 0;
                 }
-                
             }
             
             &__paragraph {
@@ -59,12 +57,31 @@
             }
             
             &__link {
-                font-size: 16px;
-                font-weight: 900;
-                text-transform: uppercase;
-                
-            }
-            
+                font-size: 33px;
+                width: 50px;
+
+                & a {
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 45px;
+                    text-align: center;
+                    align-self: center;
+                    background-color: $darkgrey;
+                    color: $white;
+                    margin: 5px;
+                    text-decoration: none;
+                    cursor: pointer;
+        
+                    &:hover {
+                        background-color: $white;
+                        color: $darkgrey;
+                    }
+        
+                    &::before {
+                        vertical-align: sub;
+                    }
+                }
+            }  
         }
         
         .skill {
@@ -72,11 +89,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            position: absolute;
-            left: 0;
-            bottom: 120px;
             height: 250px;
-            width: 38%;
             background: $lightgreen;
             
             &__container {
@@ -96,36 +109,31 @@
                     width: 100%;
                     word-wrap: break-word;
                 }
-                
             }
-            
         }
-        
     }
     
     .images {
         margin: -50px 0 0 0;
         max-width: 100%;
         max-height: 100%;
-        z-index: 40;
+        z-index: 10;
         
         &__item {
             
-            &-wide {
-                background-color: #eee;
+            &--wide {
+                background-color: #eee; // Temporary 
                 height: 50vh;
                 width: 600px;
             }
             
-            &-small {
-                background-color: #ddd;
+            &--small {
+                background-color: #ddd; // Temporary 
                 display: table-cell;
                 height: 50vh;
                 width: 300px;
             }
-            
         }
-        
     }
     
     .sidemenu {
@@ -134,31 +142,34 @@
 
         &__container {
             margin: -50px -70px 0 0;
-            width: 300px;
-            z-index: 20;
-        }
-        
-        &__sidenav-outside {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            flex-direction: column;
-            background: $darkgrey;
-            height: 650px;
-            width: 280px;
-            margin: 0 30px 0 0;
+            width: 200px;
+            z-index: 40;
+            position: absolute;
+            overflow: inherit;
         }
         
         &__sidenav-inside {
             display: flex;
-            align-items: center;
             justify-content: center;
             flex-direction: column;
             background: $darkgrey;
             color: $white;
             padding: 20px;
             width: 280px;
-            z-index: 60;
+            z-index: 18;
+            position: absolute;
+            margin-right: 100px;
+        }
+        
+        &__sidenav-outside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: $darkgrey;
+            height: 650px;
+            width: 50px;
+            margin: 0 30px 0 0;
         }
         
         &__btn {
@@ -195,6 +206,5 @@
                 color: $white;
             }
         }
-        
     }
 }

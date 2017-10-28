@@ -1,4 +1,4 @@
-<div class="project">
+<div class="page project">
   <div class="content-left">
     <div class="info">
       <h1 class="info__title">
@@ -19,7 +19,7 @@
       </p>
       
       <div class="info__link">
-        <i class="fa fa-link" aria-hidden="true">View online</i>
+        <a href="https://www.github.com" target="_blank" class="fa fa-link" aria-hidden="true"></a>
       </div>
       
     </div>
@@ -38,9 +38,9 @@
     <!-- <div class="images__item images__item-wide"><img src="http://via.placeholder.com/600x300"></div>
     <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div>
     <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div> -->
-    <div class="images__item images__item-wide"></div>
-    <div class="images__item images__item-small"></div>
-    <div class="images__item images__item-small"></div>
+    <div class="images__item images__item--wide"></div>
+    <div class="images__item images__item--small"></div>
+    <div class="images__item images__item--small"></div>
   </div>
   
   <div class="sidemenu">  
@@ -48,23 +48,23 @@
     <mat-sidenav-container class="sidemenu__container">
 
       <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
-        <a class="sidemenu__btn" routerLink="/">
+        <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">01</h3>
           <h4 class="sidemenu__btn-title">Title of project</h4>
         </a>
-        <a class="sidemenu__btn" routerLink="/">
+        <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">02</h3>
           <h4 class="sidemenu__btn-title">Title of project</h4>
         </a>
-        <a class="sidemenu__btn" routerLink="/">
+        <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">03</h3>
           <h4 class="sidemenu__btn-title">Title of project</h4>
         </a>
-        <a class="sidemenu__btn" routerLink="/">
+        <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">04</h3>
           <h4 class="sidemenu__btn-title">Title of project</h4>
         </a>
-        <a class="sidemenu__btn" routerLink="/">
+        <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">05</h3>
           <h4 class="sidemenu__btn-title">Title of project</h4>
         </a>
