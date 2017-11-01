@@ -2,20 +2,20 @@
 @import "./src/assets/scss/base/mixins";
 
 .welcome {
+    display: flex;
     padding: 50px;
     background: $orange;
+    flex-direction: column;
     color: $white;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    
+    height: calc(100vh - 243px);
+
     &__title {
         font-size: 150px;
         font-weight: 900;
         font-style: italic;
         margin: 30px 0;
     }
-    
+
     &__paragraph {
         font-size: 34px;
         font-weight: 500;
@@ -23,27 +23,33 @@
         width: 500px;
         margin: 10px 0;
     }
-    
-    
-    &__skew {
-        @include skew (-20deg);
-        display: flex;
-        flex-direction: column;
-        text-align: center;         
-        background: $darkgrey;
-        height: 55%;
-        position: relative;
-        right: -50px;
-        z-index: 19;
-        bottom: -185px;
-        
+
+
+  &__skew {
+    // @include skew (-20deg);
+    clip-path: polygon(
+        0 100%, /* left top */
+        100% 0, /* right top */
+        100% 100%, /* right bottom */
+        100% 100% /* left bottom */
+    );
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: $darkgrey;
+    height: 55%;
+    position: relative;
+    right: -50px;
+    bottom: -50px;
+    z-index: 19;
+
         &-meetme {
             @include skew (20deg);
             font-size: 26px;
             font-weight: 900;
             margin: 30px 0 0 0;
         }
-        
+
         &-scrolldown {
             @include skew (20deg);
             text-transform: uppercase;
@@ -51,7 +57,7 @@
             font-weight: 400;
             margin: 0px;
         }
-        
+
         &-arrow {
             @include scroll-button (-25deg);
             position: absolute;

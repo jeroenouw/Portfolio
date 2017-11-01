@@ -2,38 +2,29 @@
 @import "./src/assets/scss/base/mixins";
 
 .wrapper {
-    display: flex;
-    height: 100vh;
-    // overflow-y: hidden;
-    
-    app-menu {
-        align-items: center;
-        display: flex;
-        left: 0px;
-        height: 100%;
-        background-color: $white;
-        z-index: 60;
-        position: fixed; 
-    }
+  display: flex;
+  flex-flow: row;
+  height: 100vh;
+  width: 100%;
 
-    .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        z-index: 20;        
+    app-menu {
+      display: flex;
+      width: 75px;
+      height: 100%;
+      text-align: -webkit-center
     }
 
     app-sidebar {
-        display: flex;
-        justify-content: flex-end;
-        right: 0px;
-        height: 100%;
-        background-color: $white;
-        z-index: 60;
-        align-items: center;
-        position: fixed; 
+      display: flex;
+      width: 75px;
+      height: 100%;
+      text-align: -webkit-center
     }
-
 }
 
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+}

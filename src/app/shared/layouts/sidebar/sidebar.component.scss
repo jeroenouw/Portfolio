@@ -1,11 +1,12 @@
 @import "./src/assets/scss/base/variables";
 @import "./src/assets/scss/base/mixins";
 
-.sidebar {   	
+.sidebar {
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
     background: $white;
-    align-content: center;
-    text-align: center;
+    align-self: center;
     width: 72px;
 
     &__images {

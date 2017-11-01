@@ -1,12 +1,9 @@
 @import "./src/assets/scss/base/variables";
 
 .header {
-    width: 100%; 
     display: flex;
+    width: 100%;
     justify-content: center;
-    background: $white;
-    z-index: 20;
-    position: fixed;
 
     &__title {
         background: $white;

@@ -11,10 +11,12 @@
 }
 
 .menu {
+    display: flex;
+    justify-content: center;
     z-index: 150;
     left: 0;
     width: 72px;
-    height: 50px;
+    align-self: center;
     text-align: center;
     font-size: 16px;
     background: $white;
@@ -24,12 +26,12 @@
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
-        margin: 8px 0 0 -40px; 
+        margin: 8px 0 0 -40px;
         transform: rotate(270deg);
         -webkit-transform: rotate(270deg);
         color: $darkgrey;
     }
-    
+
     &__btn-item {
         position: absolute;
         display: none;
@@ -49,11 +51,11 @@
         &:nth-child(3) {
             @include menu-transition;
         }
-        
+
         &:nth-child(4) {
             @include menu-transition;
         }
-        
+
         &:nth-child(5) {
             @include menu-transition;
         }
@@ -108,19 +110,19 @@
             -webkit-transform: translate3d(0, 0, 0) scale(0.0, 1);
             transform: translate3d(0, 0, 0) scale(0.0, 1);
         }
-        
+
         &:checked + .menu__open-btn .menu__line-1 {
             -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
             transform: translate3d(0, 0, 0) rotate(45deg);
         }
 
-        
+
         &:checked + .menu__open-btn .menu__line-2 {
             -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
             transform: translate3d(0, 0, 0) scale(0.1, 1);
         }
 
-        
+
         &:checked + .menu__open-btn .menu__line-3 {
             -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
             transform: translate3d(0, 0, 0) rotate(-45deg);
@@ -170,7 +172,7 @@
                 &:hover {
                     background-color: $purple;
                 }
-                
+
             }
 
         }
@@ -192,17 +194,17 @@
         transition: transform 200ms;
         transition: transform 200ms, -webkit-transform 200ms;
     }
-    
+
     &__line-1 {
         -webkit-transform: translate3d(0, -8px, 0);
         transform: translate3d(0, -8px, 0);
     }
-    
+
     &__line-2 {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-    
+
     &__line-3 {
         -webkit-transform: translate3d(0, 8px, 0);
         transform: translate3d(0, 8px, 0);

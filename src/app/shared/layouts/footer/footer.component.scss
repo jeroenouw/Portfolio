@@ -1,13 +1,10 @@
 @import "./src/assets/scss/base/variables";
 
 .footer {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
-    background: $white;
-    z-index: 20;
-    bottom: 0;
-    position: fixed;
+    height: 71px;
 
     &__title {
         background: $white;

@@ -9,6 +9,7 @@
     background: $darkgrey;
     color: $white;
     position: relative;
+    height: 750px;
 
     .about-me {
         width: 60%;
@@ -35,18 +36,18 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 20px;
-            
+
             &-item {
                 margin: 15px 20px;
                 width: 50px;
-            
+
             }
         }
     }
 }
 
-.image {   
-    justify-content: flex-end;     
+.image {
+    justify-content: flex-end;
     width: 450px;
     margin: -50px -50px 0 0;
     z-index: 0;
@@ -66,8 +67,8 @@
     display: flex;
     justify-content: center;
 
-    &__scrolldown {   
-        @include skew (-5deg); 
+    &__scrolldown {
+        @include skew (-5deg);
 
         &-paragraph {
             margin: 45px 0 0 0;
