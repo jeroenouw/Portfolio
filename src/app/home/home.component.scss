@@ -3,9 +3,9 @@
 
 .welcome {
     display: flex;
+    flex-direction: column;
     padding: 50px;
     background: $orange;
-    flex-direction: column;
     color: $white;
     height: calc(100vh - 243px);
 
