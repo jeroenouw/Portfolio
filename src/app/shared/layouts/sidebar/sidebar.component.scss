@@ -8,6 +8,7 @@
     background: $white;
     align-self: center;
     width: 72px;
+    z-index: 40;
 
     &__images {
         @include flex-styling;

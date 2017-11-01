@@ -5,14 +5,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 50px 50px 0 0;
     background: $darkgrey;
     color: $white;
     position: relative;
+    height: calc(100vh - 193px);
+    overflow: hidden;
     
     .content-left {
         display: flex;
         flex-direction: column;
-        // width: 50%;
         
         .info {
             
@@ -21,17 +23,20 @@
                 font-weight: 700;
                 margin: 30px 0;
                 word-wrap: break-word;
+                padding: 0 50px;
             }
             
             &__client {
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
+                padding: 0 50px;
                 margin: 0px;
                 
                 &-name {
                     font-size: 16px;
                     font-style: italic;
+                    padding: 0 50px;
                     margin: 0px;
                 }
             }
@@ -40,10 +45,12 @@
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
+                padding: 0 50px;
                 margin: 10px 0 0 0;
                 
                 &-time {
                     font-style: italic;
+                    padding: 0 50px;
                     margin: 0 0 10px 0;
                 }
             }
@@ -52,6 +59,7 @@
                 font-size: 16px;
                 font-weight: 400;
                 width: 90%;
+                padding: 0 50px;
                 margin: 10px 0;
                 word-wrap: break-word;
             }
@@ -59,7 +67,8 @@
             &__link {
                 font-size: 33px;
                 width: 50px;
-
+                padding: 0 50px;
+                
                 & a {
                     border-radius: 50%;
                     height: 45px;
@@ -71,12 +80,12 @@
                     margin: 5px;
                     text-decoration: none;
                     cursor: pointer;
-        
+                    
                     &:hover {
                         background-color: $white;
                         color: $darkgrey;
                     }
-        
+                    
                     &::before {
                         vertical-align: sub;
                     }
@@ -85,7 +94,12 @@
         }
         
         .skill {
-            @include skew (-8deg);
+            clip-path: polygon(
+            0 50%, /* left top */
+            100% 0, /* right top */
+            100% 100%, /* right bottom */
+            0 100% /* left bottom */
+            );
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -93,17 +107,15 @@
             background: $lightgreen;
             
             &__container {
-                margin: -60px 0 0 30px;
+                margin: 95px 0 0 30px;
                 
                 &-title {
-                    @include skew (8deg);
                     text-transform: uppercase;
                     margin: 0;
                     
                 }
                 
                 &-items {
-                    @include skew (8deg);
                     font-style: italic;
                     margin: 0;
                     width: 100%;
@@ -123,14 +135,14 @@
             
             &--wide {
                 background-color: #eee; // Temporary 
-                height: 50vh;
+                height: calc(50vh - 53px);
                 width: 600px;
             }
             
             &--small {
                 background-color: #ddd; // Temporary 
                 display: table-cell;
-                height: 50vh;
+                height: calc(50vh - 90px);
                 width: 300px;
             }
         }
@@ -139,7 +151,7 @@
     .sidemenu {
         background: $darkgrey;
         height: 100%;
-
+        
         &__container {
             margin: -50px -70px 0 0;
             width: 200px;
@@ -167,7 +179,8 @@
             justify-content: center;
             flex-direction: column;
             background: $darkgrey;
-            height: 650px;
+            // height: 650px;
+            height: calc(100vh - 143px);
             width: 50px;
             margin: 0 30px 0 0;
         }

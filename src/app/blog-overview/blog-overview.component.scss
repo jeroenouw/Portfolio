@@ -2,64 +2,66 @@
 @import "./src/assets/scss/base/mixins";
 
 .blog-overview {
-    height: 100%;
     background: $darkgrey;
     color: $white;
     padding: 0;
-    // overflow-y: scroll;
-
+    height: calc(100vh - 142px);
+    overflow: hidden;
+    
     &__header {
-        @include skew (-5deg);
-        margin: -150px 0 0 0;
+        clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 75%,
+        0 100%
+        );
         background: $purple;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height: 350px;
-
+        height: 250px;
+        
         &-title {
-            @include skew (5deg);
             font-size: 66px;
             font-weight: 700;
             text-transform: uppercase;
-            margin: 70px 0 0 -140px;
+            margin: 0 0 0 -140px;
         }
-
+        
         &-searchbar {
-            @include skew (5deg);
             height: 35px;
             width: 284px;
-            margin: 200px 15px 0 0;
+            margin: 0 15px 0 0;
             padding: 5px 15px;
             border: none;
             background: $white;
             color: $purple;
-
+            
         }
-
+        
     }
-
+    
     &__list {
         height: 100%;
-        margin: 50px 0;
+        // margin: 50px 0;
         overflow: hidden;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-
+        
         &-item {
             margin: 40px 15px 0 15px;
             background: $purple;
             height: 250px;
             width: 250px;
-
+            
             &:hover {
                 background: $white;
                 cursor: pointer;
             }
-
+            
             &:hover &-date {
                 color: $purple; 
             }
@@ -67,29 +69,26 @@
             &:hover &-title {
                 color: $purple;
             }
-
+            
             &:nth-of-type(even) {
                 margin-top: 150px;
             }
-
+            
             &-date {
                 font-size: 14px;
                 font-weight: 400;
                 padding: 20px 20px 5px 20px;
                 font-style: italic;
                 color: $white;
-              
+                
             }
-
+            
             &-title {
                 font-size: 26px;
                 font-weight: 900;
                 padding: 0 20px 20px 20px;
                 color: $white; 
             }
-
         }
-
     }
-
 }
