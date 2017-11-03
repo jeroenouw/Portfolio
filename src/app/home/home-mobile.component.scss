@@ -1,0 +1,13 @@
+@import "./src/assets/scss/main";
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+    .home {
+        &__title {
+            font-size: 59px;
+        }
+        
+        &__paragraph {
+            font-size: 22px;
+        }
+    }
+}

@@ -1,7 +1,6 @@
-@import "./src/assets/scss/base/variables";
-@import "./src/assets/scss/base/mixins";
+@import "./src/assets/scss/main";
 
-.welcome {
+.home {
     display: flex;
     flex-direction: column;
     padding: 50px;

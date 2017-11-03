@@ -1,13 +1,13 @@
 <mat-sidenav-container>
   <div class="wrapper">
     <mat-sidenav #sidenav mode="push">
-      <a routerLink="/about-me" class="btn-item btn-item--orange" (click)="sidenav.toggle()">
+      <a routerLink="/about-me" class="btn-item btn-item--orange" (click)="sidenav.close()">
         About me
       </a>
-      <a routerLink="/project" class="btn-item btn-item--green" (click)="sidenav.toggle()">
+      <a routerLink="/projects/ftsf-webshop" class="btn-item btn-item--green" (click)="sidenav.close()">
         Projects
       </a>
-      <a routerLink="/blogs" class="btn-item btn-item--purple" (click)="sidenav.toggle()">
+      <a routerLink="/blogs" class="btn-item btn-item--purple" (click)="sidenav.close()">
         Blogs
       </a>
     </mat-sidenav>
@@ -16,17 +16,17 @@
       <!-- <button type="button" mat-button (click)="sidenav.toggle()">
         Open sidenav
       </button> -->
-      <app-menu (click)="sidenav.toggle()"></app-menu>
+      <app-menu class="app-menu" (click)="sidenav.toggle()"></app-menu>
     </div>
     
     
     <div class="container">
-      <app-header></app-header>
+      <app-header class="app-header"></app-header>
       <router-outlet></router-outlet>
-      <app-footer></app-footer>
+      <app-footer class="app-footer"></app-footer>
     </div>
     
-    <app-sidebar></app-sidebar>
+    <app-sidebar class="app-sidebar"></app-sidebar>
   </div>
   
 </mat-sidenav-container>

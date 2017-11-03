@@ -1,5 +1,4 @@
-@import "./src/assets/scss/base/variables";
-@import "./src/assets/scss/base/mixins";
+@import "./src/assets/scss/main";
 
 .wrapper {
   display: flex;
@@ -37,6 +36,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 280px;
+  z-index: 50;
 }
 
 mat-sidenav-container {
@@ -48,7 +49,7 @@ mat-sidenav-container {
 }
 
 .mat-sidenav-content {
-  margin: 0;
+  margin-left: 200px;
 }
 
 .example-sidenav-content {
@@ -64,6 +65,7 @@ mat-sidenav-container {
 }
 
 .btn-item {  
+  margin: 33px 0 0 75px;
   text-decoration: none;
   color: $darkgrey;
   font-size: 32px;
