@@ -10,26 +10,26 @@
     color: $white;
     position: relative;
     height: calc(100vh - 243px);
-
+    
     .about-me {
         width: 47%;
         z-index: 20;
         height: 100%;
         padding: 0 50px;
-
+        
         &__title {
             font-size: 66px;
             font-weight: 700;
             text-transform: uppercase;
             margin: 30px 0;
         }
-
+        
         &__paragraph {
             font-size: 16px;
             font-weight: 400;
             margin: 10px 0;
         }
-
+        
         &__languages {
             display: flex;
             flex-direction: row;
@@ -37,11 +37,11 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 20px;
-
+            
             &-item {
                 margin: 15px 20px;
                 width: 50px;
-
+                
             }
         }
     }
@@ -52,7 +52,7 @@
     width: 610px;
     margin: -50px 0 0 0;
     z-index: 0;
-
+    
     &__item {   
         position: relative;
         width: 100%;
@@ -62,10 +62,10 @@
 
 .skew {
     clip-path: polygon(
-        0 50%,
-        0 100%,
-        100% 100%,
-        100% 90%
+    0 50%,
+    0 100%,
+    100% 100%,
+    100% 90%
     );
     display: flex;
     justify-content: center;
@@ -76,10 +76,10 @@
     z-index: 19;
     position: absolute;
     bottom: 0px;
-
+    
     &__scrolldown {
         @include skew (-5deg);
-
+        
         &-paragraph {
             margin: 45px 0 0 0;
         }
