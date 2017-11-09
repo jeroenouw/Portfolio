@@ -11,6 +11,7 @@ import { FtsfWebshopComponent } from './project-overview/ftsf-webshop/ftsf-websh
 import { CompetaMilmanComponent } from './project-overview/competa-milman/competa-milman.component';
 import { NgxmatfireComponent } from './project-overview/ngxmatfire/ngxmatfire.component';
 import { NgxaiComponent } from './project-overview/ngxai/ngxai.component';
+import { NgxionicComponent } from './project-overview/ngxionic/ngxionic.component';
 
 // Blog Overview
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   { path: 'projects/competa-milman', component: CompetaMilmanComponent },
   { path: 'projects/ngx-mat-fire', component: NgxmatfireComponent },
   { path: 'projects/ngx-ai', component: NgxaiComponent },
+  { path: 'projects/ngx-ionic', component: NgxionicComponent },
 
   // Blog Overview
   { path: 'blogs', component: BlogOverviewComponent },

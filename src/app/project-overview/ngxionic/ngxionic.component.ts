@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ngxai',
-  templateUrl: './ngxai.component.html',
+  selector: 'app-ngxionic',
+  templateUrl: './ngxionic.component.html',
   styleUrls: ['../project/project.component.scss', '../project/project-mobile.component.scss']
 })
-export class NgxaiComponent implements OnInit {
+export class NgxionicComponent implements OnInit {
   onlyImagePath: string;
-
+  
   constructor() {
-    this.onlyImagePath = '/assets/img/projects/ai2.png';
+    this.onlyImagePath = '/assets/img/projects/ion1.png';
   }
-
+  
   ngOnInit() {
   }
-
+  
 }

@@ -9,87 +9,84 @@
       
       <h5 class="info__date">Date</h5>
       <p class="info__date-time">09 / 2017 - now</p>
-
+      
       <p class="info__paragraph">
-        It won’t be a bigger problem to ﬁnd one video game lover in your neighbor.
-        Since the introduction of Virtual Game,
-        it has been achieving great heights so far as its popularity and technological advancement are concerned.
-        The history of video game is as interesting as a fairy tale.
-        The quality of today’s video game was not at all there when video game ﬁrst conceptualized and played ever.
+        Fairtrade Software Webshop for Competa IT. 
       </p>
-
+      
       <div class="info__link">
         <a href="#" target="_blank" class="fa fa-link" aria-hidden="true"></a>
       </div>
-
+      
     </div>
-
+    
     <div class="skill">
       <div class="skill__container">
         <h5 class="skill__container-title">Skills used</h5>
         <p class="skill__container-items">
-          HTML5, SCSS, Gulp, PHP, Laravel
+          HTML5, SCSS, JavaScript, Webpack, PHP, Laravel
         </p>
       </div>
     </div>
   </div>
-
+  
   <div class="images">
     <!-- <div class="images__item images__item-wide"><img src="http://via.placeholder.com/600x300"></div>
-    <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div>
-    <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div> -->
-    <div class="images__item images__item--wide"></div>
-    <div class="images__item images__item--small"></div>
-    <div class="images__item images__item--small"></div>
+      <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div>
+      <div class="images__item images__item-small"><img src="http://via.placeholder.com/300x300"></div> -->
+      <div class="images__item images__item--wide"><img [src]="bigImagePath"></div>
+      <div class="images__item images__item--small"><img [src]="smallImagePathFirst"></div>
+      <div class="images__item images__item--small"><img [src]="smallImagePathSecond"></div>
+    </div>
+    
+    <div class="sidemenu">
+      
+      <mat-sidenav-container class="sidemenu__container">
+        
+        <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
+          <a class="sidemenu__btn" routerLink="/projects/ftsf-webshop" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">01</h3>
+            <h4 class="sidemenu__btn-title">FTSF Webshop</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/competa-milman" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">02</h3>
+            <h4 class="sidemenu__btn-title">Competa Milman</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ngx-mat-fire" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">03</h3>
+            <h4 class="sidemenu__btn-title">Angular Material Firebase</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ngx-ionic" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">04</h3>
+            <h4 class="sidemenu__btn-title">Angular Ionic</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ngx-ai" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">05</h3>
+            <h4 class="sidemenu__btn-title">Angular AI</h4>
+          </a>
+        </mat-sidenav>
+        
+        <div class="sidemenu__sidenav-outside">
+          <a (click)="sidenav.open()">
+            <h3 class="sidemenu__btn-number">01</h3>
+          </a>
+          <a (click)="sidenav.open()">
+            <h3 class="sidemenu__btn-number">02</h3>
+          </a>
+          <a (click)="sidenav.open()">
+            <h3 class="sidemenu__btn-number">03</h3>
+          </a>
+          <a (click)="sidenav.open()">
+            <h3 class="sidemenu__btn-number">04</h3>
+          </a>
+          <a (click)="sidenav.open()">
+            <h3 class="sidemenu__btn-number">05</h3>
+          </a>
+        </div>
+        
+      </mat-sidenav-container>
+      
+    </div>
+    
   </div>
-
-  <div class="sidemenu">
-
-    <mat-sidenav-container class="sidemenu__container">
-
-      <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
-        <a class="sidemenu__btn" routerLink="/projects/ftsf-webshop" (click)="sidenav.toggle()">
-          <h3 class="sidemenu__btn-number">01</h3>
-          <h4 class="sidemenu__btn-title">FTSF Webshop</h4>
-        </a>
-        <a class="sidemenu__btn" routerLink="/projects/competa-milman" (click)="sidenav.toggle()">
-          <h3 class="sidemenu__btn-number">02</h3>
-          <h4 class="sidemenu__btn-title">Competa Milman</h4>
-        </a>
-        <a class="sidemenu__btn" routerLink="/projects/ngx-mat-fire" (click)="sidenav.toggle()">
-          <h3 class="sidemenu__btn-number">03</h3>
-          <h4 class="sidemenu__btn-title">Angular Material Firebase</h4>
-        </a>
-        <a class="sidemenu__btn" routerLink="/projects/competa-milman" (click)="sidenav.toggle()">
-          <h3 class="sidemenu__btn-number">04</h3>
-          <h4 class="sidemenu__btn-title">Title of project</h4>
-        </a>
-        <!-- <a class="sidemenu__btn" routerLink="/project" (click)="sidenav.toggle()">
-          <h3 class="sidemenu__btn-number">05</h3>
-          <h4 class="sidemenu__btn-title">Title of project</h4>
-        </a> -->
-      </mat-sidenav>
-
-      <div class="sidemenu__sidenav-outside">
-        <a (click)="sidenav.open()">
-          <h3 class="sidemenu__btn-number">01</h3>
-        </a>
-        <a (click)="sidenav.open()">
-          <h3 class="sidemenu__btn-number">02</h3>
-        </a>
-        <a (click)="sidenav.open()">
-          <h3 class="sidemenu__btn-number">03</h3>
-        </a>
-        <a (click)="sidenav.open()">
-          <h3 class="sidemenu__btn-number">04</h3>
-        </a>
-        <!-- <a (click)="sidenav.open()">
-          <h3 class="sidemenu__btn-number">05</h3>
-        </a> -->
-      </div>
-
-    </mat-sidenav-container>
-
-  </div>
-
-</div>
+  

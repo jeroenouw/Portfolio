@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../project/project.component.scss', '../project/project-mobile.component.scss']
 })
 export class NgxmatfireComponent implements OnInit {
-
-  constructor() { }
-
+  onlyImagePath: string;
+  
+  constructor() {
+    this.onlyImagePath = '/assets/img/projects/ngxmatfire1.png';
+  }
+  
   ngOnInit() {
   }
-
+  
 }

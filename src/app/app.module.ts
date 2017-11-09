@@ -14,6 +14,7 @@ import { FtsfWebshopComponent } from './project-overview/ftsf-webshop/ftsf-websh
 import { CompetaMilmanComponent } from './project-overview/competa-milman/competa-milman.component';
 import { NgxmatfireComponent } from './project-overview/ngxmatfire/ngxmatfire.component';
 import { NgxaiComponent } from './project-overview/ngxai/ngxai.component';
+import { NgxionicComponent } from './project-overview/ngxionic/ngxionic.component';
 
 // Blog Overview
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
@@ -43,7 +44,8 @@ import { AppRouting } from './app.routing';
     FtsfWebshopComponent,
     CompetaMilmanComponent,
     NgxmatfireComponent,
-    NgxaiComponent
+    NgxaiComponent,
+    NgxionicComponent
   ],
   imports: [
     BrowserModule,

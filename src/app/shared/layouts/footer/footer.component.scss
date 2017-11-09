@@ -3,15 +3,15 @@
 .footer {
     display: flex;
     width: 100%;
-    justify-content: center;
     height: 71px;
+    justify-content: center;
 
     &__title {
         background: $white;
         font-size: 18px;
         font-weight: 400;
         text-transform: uppercase;
-        margin: 20px 0;
         color: $darkgrey;
+        align-self: center;
     }
 }

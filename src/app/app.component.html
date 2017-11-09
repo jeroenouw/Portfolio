@@ -1,33 +1,31 @@
 <mat-sidenav-container>
   <div class="wrapper">
-    <mat-sidenav #sidenav mode="push">
-      <a routerLink="/about-me" class="btn-item btn-item--orange" (click)="sidenav.close()">
+    <mat-sidenav #sidenav mode="over">
+      <a routerLink="/about-me" class="btn-item btn-item--orange" (click)="sidenav.close()" for="menu__open">
         About me
       </a>
-      <a routerLink="/projects/ftsf-webshop" class="btn-item btn-item--green" (click)="sidenav.close()">
+      <a routerLink="/projects/ftsf-webshop" class="btn-item btn-item--green" (click)="sidenav.close()" for="menu__open">
         Projects
       </a>
-      <a routerLink="/blogs" class="btn-item btn-item--purple" (click)="sidenav.close()">
+      <!-- <a routerLink="/blogs" class="btn-item btn-item--purple" (click)="sidenav.close()" for="menu__open">
         Blogs
-      </a>
+      </a> -->
+      <div class="sidebar__images">
+        <a href="https://github.com/jeroenouw" target="_blank" class="fa fa-github-alt" aria-hidden="true"></a>
+        <a href="https://www.linkedin.com/in/jeroen-ouwehand-a45b79b9/" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+      </div>
     </mat-sidenav>
     
-    <div class="example-sidenav-content">
-      <!-- <button type="button" mat-button (click)="sidenav.toggle()">
-        Open sidenav
-      </button> -->
+    <div>
       <app-menu class="app-menu" (click)="sidenav.toggle()"></app-menu>
     </div>
     
-    
     <div class="container">
-      <app-header class="app-header"></app-header>
+      <app-header class="app-header" (click)="sidenav.close()"></app-header>
       <router-outlet></router-outlet>
       <app-footer class="app-footer"></app-footer>
     </div>
     
     <app-sidebar class="app-sidebar"></app-sidebar>
   </div>
-  
 </mat-sidenav-container>
-
