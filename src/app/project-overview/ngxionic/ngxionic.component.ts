@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgxionicComponent implements OnInit {
   onlyImagePath: string;
-  
+
   constructor() {
-    this.onlyImagePath = '/assets/img/projects/ion1.png';
+    this.onlyImagePath = '/assets/img/projects/ion3.jpg';
   }
-  
+
   ngOnInit() {
   }
-  
+
 }

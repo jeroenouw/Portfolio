@@ -6,20 +6,20 @@
       </h1>
       <h5 class="info__client">Client</h5>
       <p class="info__client-name">Open Source</p>
-      
+
       <h5 class="info__date">Date</h5>
       <p class="info__date-time">10 / 2017 - now</p>
-      
+
       <p class="info__paragraph">
-        A small AI application containing Angular 5, Material and Dialogflow. 
+        A small AI application containing Angular 5, Material and Dialogflow.
       </p>
-      
+
       <div class="info__link">
         <a href="https://github.com/jeroenouw/AngularAI" target="_blank" class="fa fa-link" aria-hidden="true"></a>
       </div>
-      
+
     </div>
-    
+
     <div class="skill">
       <div class="skill__container">
         <h5 class="skill__container-title">Skills used</h5>
@@ -29,15 +29,15 @@
       </div>
     </div>
   </div>
-  
+
   <div class="images">
-    <div class="images__item images__item--full"><img [src]="onlyImagePath"></div>
+    <div class="images__item images__item--new"><img [src]="onlyImagePath"></div>
   </div>
-  
+
   <div class="sidemenu">
-    
+
     <mat-sidenav-container class="sidemenu__container">
-      
+
       <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
         <a class="sidemenu__btn" routerLink="/projects/ftsf-webshop" (click)="sidenav.toggle()">
           <h3 class="sidemenu__btn-number">01</h3>
@@ -60,7 +60,7 @@
           <h4 class="sidemenu__btn-title">Angular AI</h4>
         </a>
       </mat-sidenav>
-      
+
       <div class="sidemenu__sidenav-outside">
         <a (click)="sidenav.open()">
           <h3 class="sidemenu__btn-number">01</h3>
@@ -78,9 +78,9 @@
           <h3 class="sidemenu__btn-number">05</h3>
         </a>
       </div>
-      
+
     </mat-sidenav-container>
-    
+
   </div>
-  
+
 </div>

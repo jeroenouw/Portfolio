@@ -9,7 +9,7 @@ export class NgxaiComponent implements OnInit {
   onlyImagePath: string;
 
   constructor() {
-    this.onlyImagePath = '/assets/img/projects/ai2.png';
+    this.onlyImagePath = '/assets/img/projects/ai3.jpg';
   }
 
   ngOnInit() {

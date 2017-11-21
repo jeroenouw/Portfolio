@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgxmatfireComponent implements OnInit {
   onlyImagePath: string;
-  
+
   constructor() {
-    this.onlyImagePath = '/assets/img/projects/ngxmatfire1.png';
+    this.onlyImagePath = '/assets/img/projects/milm1.jpg';
   }
-  
+
   ngOnInit() {
   }
-  
+
 }
